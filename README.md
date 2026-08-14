@@ -73,3 +73,77 @@ export default defineConfig([
 ])
 
 ```
+
+
+### 처음 세팅
+1. vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// mode에 따라 base 자동 분기
+export default defineConfig(({ mode }) => ({
+  plugins: [react()],
+  base: mode === 'production' ? '/react-ts/' : '/', // repo 이름 맞춰서 변경
+}))
+
+2. .github/workflows/deploy.yml 경로에 추가
+name: Deploy React to GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dist
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+
+### router 설치
+npm install react-router-dom
+
+
+### 재구동
+ctrl + shift + p - TypeScript: Restart TS Server 선택

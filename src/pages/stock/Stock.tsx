@@ -16,6 +16,34 @@ const Stock = () => {
                     <div className="h_tit2">커버드콜</div>
                     <div className="h_tit3">h_tit3</div>
                     <div className="h_tit4">h_tit4</div>
+
+
+                    <div className="h_tit2">금융소득 건보료 영향 비교</div>
+                    <p>2026.08.25</p>
+                    <div className="table_wrap">
+                        <table>
+                            <tr>
+                                <th>가입 유형</th>
+                                <th>주요 변화</th>
+                                <th>계산 특징</th>
+                            </tr>
+                            <tr>
+                                <td>직장가입자</td>
+                                <td>보수외소득월액 보험료 추가</td>
+                                <td>2,000만 원 초과분에만 부과</td>
+                            </tr>
+                            <tr>
+                                <td>피부양자</td>
+                                <td>자격 상실 및 지역 전환</td>
+                                <td>전체 소득이 부과 베이스</td>
+                            </tr>
+                            <tr>
+                                <td>지역가입자</td>
+                                <td>소득월액 보험료 증가</td>
+                                <td>1,000만 원 초과 시 전액 반영</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </>

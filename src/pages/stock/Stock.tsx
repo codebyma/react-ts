@@ -11,12 +11,39 @@ const Stock = () => {
                     <div className={style.stock_container}>
 
                     </div>
-                    <div className="h_tit1">나스닥100</div>
-                    <p>분배율</p>
-                    <div className="h_tit2">커버드콜</div>
-                    <div className="h_tit3">h_tit3</div>
-                    <div className="h_tit4">h_tit4</div>
-
+                    <div className="h_tit2">종목별</div>
+                    <div className="table_wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>한국</th>
+                                    <th>미국</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TIGER 미국배당다우존스</td>
+                                    <td>SCHD</td>
+                                </tr>
+                                <tr>
+                                    <td>TIGER 미국배당다우존스타겟데일리커버드콜</td>
+                                    <td>SCHD</td>
+                                </tr>
+                                <tr>
+                                    <td>KODEX 미국배당커버드콜액티브</td>
+                                    <td>DIVO</td>
+                                </tr>
+                                <tr>
+                                    <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
+                                    <td>QQQ</td>
+                                </tr>
+                                <tr>
+                                    <td>RISE 미국AI밸류체인데일리고정커버드콜</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div className="h_tit2">금융소득 건보료 영향 비교</div>
                     <p>2026.08.25</p>
@@ -48,6 +75,9 @@ const Stock = () => {
                             </tbody>
                         </table>
                     </div>
+
+
+
                 </div>
             </div>
         </>

@@ -1256,8 +1256,8 @@ p.bullet_dot::before,
 .table_wrap table {
   width: 100%;
   border-collapse: collapse;
-  /* border-top: 2px solid var(--gray400); */
-  /* table-layout: fixed; */
+  border-top: 2px solid var(--gray400);
+  table-layout: fixed;
 }
 
 caption {

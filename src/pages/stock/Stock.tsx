@@ -22,26 +22,30 @@ const Stock = () => {
                     <p>2026.08.25</p>
                     <div className="table_wrap">
                         <table>
-                            <tr>
-                                <th>가입 유형</th>
-                                <th>주요 변화</th>
-                                <th>계산 특징</th>
-                            </tr>
-                            <tr>
-                                <td>직장가입자</td>
-                                <td>보수외소득월액 보험료 추가</td>
-                                <td>2,000만 원 초과분에만 부과</td>
-                            </tr>
-                            <tr>
-                                <td>피부양자</td>
-                                <td>자격 상실 및 지역 전환</td>
-                                <td>전체 소득이 부과 베이스</td>
-                            </tr>
-                            <tr>
-                                <td>지역가입자</td>
-                                <td>소득월액 보험료 증가</td>
-                                <td>1,000만 원 초과 시 전액 반영</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>가입 유형</th>
+                                    <th>주요 변화</th>
+                                    <th>계산 특징</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>직장가입자</th>
+                                    <td>보수외소득월액 보험료 추가</td>
+                                    <td>2,000만 원 초과분에만 부과</td>
+                                </tr>
+                                <tr>
+                                    <th>피부양자</th>
+                                    <td>자격 상실 및 지역 전환</td>
+                                    <td>전체 소득이 부과 베이스</td>
+                                </tr>
+                                <tr>
+                                    <th>지역가입자</th>
+                                    <td>소득월액 보험료 증가</td>
+                                    <td>1,000만 원 초과 시 전액 반영</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

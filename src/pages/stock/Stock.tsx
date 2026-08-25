@@ -17,45 +17,39 @@ const Stock = () => {
                             <colgroup>
                                 <col className="w10" />
                                 <col />
-                                <col className="w15" />
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th>분류</th>
                                     <th>종목</th>
-                                    <th>비고</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>배당</td>
-                                    <td>TIGER 미국배당다우존스</td>
-                                    <td>SCHD</td>
+                                    <td>
+                                        TIGER 미국배당다우존스
+                                        <p>SCHD</p></td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
-                                    <td>TIGER 미국배당다우존스타겟데일리커버드콜</td>
-                                    <td>SCHD</td>
+                                    <td>TIGER 미국배당다우존스타겟데일리커버드콜<p>SCHD</p></td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
-                                    <td>KODEX 미국배당커버드콜액티브</td>
-                                    <td>DIVO</td>
+                                    <td>KODEX 미국배당커버드콜액티브<p>DIVO</p></td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
-                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
-                                    <td>TIGER 미국나스닥100레버리지(합성)</td>
-                                    <td>QLD</td>
+                                    <td>TIGER 미국나스닥100레버리지(합성)<p>QLD</p></td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>RISE 미국AI밸류체인데일리고정커버드콜</td>
-                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>

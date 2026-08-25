@@ -1256,7 +1256,7 @@ p.bullet_dot::before,
 .table_wrap table {
   width: 100%;
   border-collapse: collapse;
-  border-top: 2px solid var(--gray400);
+  /* border-top: 2px solid var(--gray400); */
   /* table-layout: fixed; */
 }
 
@@ -1288,6 +1288,7 @@ caption {
 
 .table_wrap table thead th {
   border-bottom: 1px solid var(--border-color);
+  text-align: center;
 }
 
 .table_wrap table tfoot th {

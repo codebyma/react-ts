@@ -45,7 +45,7 @@ const Stock = () => {
                                 <tr>
                                     <td>성장</td>
                                     <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
-                                    <td>QQQ</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>

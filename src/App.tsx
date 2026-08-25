@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layouts/Layout";
 import Index from "./ex/Index";
 import Home from "./pages/Home";
+import Stock from "./pages/stock/Stock";
 import ButtonDemo from "./ex/ButtonDemo";
 import TextPage from "./ex/TextDemo";
 import "./App.css";
@@ -22,6 +23,14 @@ const router = createBrowserRouter(
             { index: true, element: <TextPage /> },
             { path: "ButtonDemo", element: <ButtonDemo /> },
             { path: "TextDemo", element: <TextPage /> },
+          ],
+        },
+        {
+          path: "stock/Stock",
+          element: <Stock />,
+          children: [
+            { index: true, element: <Stock /> },
+            { path: "stock", element: <Stock /> },
           ],
         },
       ],

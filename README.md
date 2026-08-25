@@ -140,10 +140,15 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+### dev 실행
+npm run dev
+
 
 ### router 설치
 npm install react-router-dom
 
 
 ### 재구동
-ctrl + shift + p - TypeScript: Restart TS Server 선택
+ctrl + shift + p 누르고
+TypeScript: Restart TS Server 타이핑 또는
+Developer: Reload Window 타이핑

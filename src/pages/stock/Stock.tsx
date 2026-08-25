@@ -17,7 +17,7 @@ const Stock = () => {
                             <colgroup>
                                 <col className="w15" />
                                 <col />
-                                <col />
+                                <col className="w15" />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -46,6 +46,11 @@ const Stock = () => {
                                     <td>성장</td>
                                     <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
                                     <td>QQQ</td>
+                                </tr>
+                                <tr>
+                                    <td>성장</td>
+                                    <td>TIGER 미국나스닥100레버리지(합성)</td>
+                                    <td>QLD</td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>

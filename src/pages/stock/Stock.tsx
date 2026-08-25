@@ -29,35 +29,35 @@ const Stock = () => {
                                     <td>배당</td>
                                     <td>
                                         TIGER 미국배당다우존스
-                                        <small>SCHD</small>
+                                        <small>(SCHD)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
                                     <td>
                                         TIGER 미국배당다우존스타겟데일리커버드콜
-                                        <small>SCHD</small>
+                                        <small>(SCHD + 커버드콜)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
                                     <td>
                                         KODEX 미국배당커버드콜액티브
-                                        <small>DIVO</small>
+                                        <small>(DIVO/S&P500 + 커버드콜 JEPI와 유사)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>
                                         TIGER 미국나스닥100타겟데일리커버드콜
-                                        <small>QQQ</small>
+                                        <small>(Nasdaq100 + 커버드콜 JEPQ와 유사)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>
                                         TIGER 미국나스닥100레버리지(합성)
-                                        <small>QLD</small>
+                                        <small>(QLD)</small>
                                     </td>
                                 </tr>
                                 <tr>

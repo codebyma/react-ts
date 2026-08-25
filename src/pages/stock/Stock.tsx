@@ -11,11 +11,11 @@ const Stock = () => {
                     <div className={style.stock_container}>
 
                     </div>
-                    <div className="h_tit2">배당</div>
+                    <div className="h_tit2">종목</div>
                     <div className="table_wrap">
                         <table>
                             <colgroup>
-                                <col className="w10" />
+                                <col className="w20" />
                                 <col />
                             </colgroup>
                             <thead>
@@ -29,27 +29,42 @@ const Stock = () => {
                                     <td>배당</td>
                                     <td>
                                         TIGER 미국배당다우존스
-                                        <p>SCHD</p></td>
+                                        <small>SCHD</small>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
-                                    <td>TIGER 미국배당다우존스타겟데일리커버드콜<p>SCHD</p></td>
+                                    <td>
+                                        TIGER 미국배당다우존스타겟데일리커버드콜
+                                        <small>SCHD</small>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>배당</td>
-                                    <td>KODEX 미국배당커버드콜액티브<p>DIVO</p></td>
+                                    <td>
+                                        KODEX 미국배당커버드콜액티브
+                                        <small>DIVO</small>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
-                                    <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
+                                    <td>
+                                        TIGER 미국나스닥100타겟데일리커버드콜
+                                        <small>QQQ</small>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
-                                    <td>TIGER 미국나스닥100레버리지(합성)<p>QLD</p></td>
+                                    <td>
+                                        TIGER 미국나스닥100레버리지(합성)
+                                        <small>QLD</small>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
-                                    <td>RISE 미국AI밸류체인데일리고정커버드콜</td>
+                                    <td>
+                                        RISE 미국AI밸류체인데일리고정커버드콜
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

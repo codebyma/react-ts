@@ -15,7 +15,7 @@ const Stock = () => {
                     <div className="table_wrap">
                         <table>
                             <colgroup>
-                                <col className="w15" />
+                                <col className="w10" />
                                 <col />
                                 <col className="w15" />
                             </colgroup>

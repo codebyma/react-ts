@@ -11,33 +11,44 @@ const Stock = () => {
                     <div className={style.stock_container}>
 
                     </div>
-                    <div className="h_tit2">종목별</div>
+                    <div className="h_tit2">배당</div>
                     <div className="table_wrap">
                         <table>
+                            <colgroup>
+                                <col className="w15" />
+                                <col />
+                                <col />
+                            </colgroup>
                             <thead>
                                 <tr>
-                                    <th>한국</th>
-                                    <th>미국</th>
+                                    <th>분류</th>
+                                    <th>종목</th>
+                                    <th>비고</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>배당</td>
                                     <td>TIGER 미국배당다우존스</td>
                                     <td>SCHD</td>
                                 </tr>
                                 <tr>
+                                    <td>배당</td>
                                     <td>TIGER 미국배당다우존스타겟데일리커버드콜</td>
                                     <td>SCHD</td>
                                 </tr>
                                 <tr>
+                                    <td>배당</td>
                                     <td>KODEX 미국배당커버드콜액티브</td>
                                     <td>DIVO</td>
                                 </tr>
                                 <tr>
+                                    <td>성장</td>
                                     <td>TIGER 미국나스닥100타겟데일리커버드콜</td>
                                     <td>QQQ</td>
                                 </tr>
                                 <tr>
+                                    <td>성장</td>
                                     <td>RISE 미국AI밸류체인데일리고정커버드콜</td>
                                     <td></td>
                                 </tr>

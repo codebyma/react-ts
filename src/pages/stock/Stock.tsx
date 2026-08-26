@@ -67,6 +67,34 @@ const Stock = () => {
                                         <small>(미국 AI 밸류체인 + 90% 참여 + 데일리 옵션 프리미엄)</small>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>배당</td>
+                                    <td>
+                                        PLUS 고배당주
+                                        <small>(배당주에 투자해서 배당과 주가 상승을 같이 노린다.)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>배당</td>
+                                    <td>
+                                        TIGER 은행고배당플러스TOP10
+                                        <small>(은행주 주주환원에 집중 투자한다.)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>배당</td>
+                                    <td>
+                                        KODEX 한국부동산리츠인프라
+                                        <small>(리츠·인프라에서 높은 현금흐름을 얻는다.)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>배당</td>
+                                    <td>
+                                        KODEX 200타겟위클리커버드콜
+                                        <small>(한국 대형주에 투자하면서 옵션 프리미엄으로 현금흐름을 추가한다.)</small>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

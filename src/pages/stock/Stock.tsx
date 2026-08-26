@@ -26,70 +26,70 @@ const Stock = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         TIGER 미국배당다우존스
                                         <small>(SCHD와 동일한 기초지수 계열)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         TIGER 미국배당다우존스타겟데일리커버드콜
                                         <small>(SCHD + 커버드콜)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         KODEX 미국배당커버드콜액티브
                                         <small>(DIVO와 매우 유사한 구조 + S&P500을 비교지수로 사용)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>성장</td>
+                                    <td className="align_c">성장</td>
                                     <td>
                                         TIGER 미국나스닥100타겟데일리커버드콜
                                         <small>(Nasdaq100 + 커버드콜 / JEPQ와 유사)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>성장</td>
+                                    <td className="align_c">성장</td>
                                     <td>
                                         TIGER 미국나스닥100레버리지(합성)
                                         <small>(QLD / Nasdaq100 일일 수익률 2배)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>성장</td>
+                                    <td className="align_c">성장</td>
                                     <td>
                                         RISE 미국AI밸류체인데일리고정커버드콜
                                         <small>(미국 AI 밸류체인 + 90% 참여 + 데일리 옵션 프리미엄)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         PLUS 고배당주
                                         <small>(배당주에 투자해서 배당과 주가 상승을 같이 노린다.)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         TIGER 은행고배당플러스TOP10
                                         <small>(은행주 주주환원에 집중 투자한다.)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         KODEX 한국부동산리츠인프라
                                         <small>(리츠·인프라에서 높은 현금흐름을 얻는다.)</small>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>배당</td>
+                                    <td className="align_c">배당</td>
                                     <td>
                                         KODEX 200타겟위클리커버드콜
                                         <small>(한국 대형주에 투자하면서 옵션 프리미엄으로 현금흐름을 추가한다.)</small>

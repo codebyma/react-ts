@@ -29,7 +29,7 @@ const Stock = () => {
                                     <td>배당</td>
                                     <td>
                                         TIGER 미국배당다우존스
-                                        <small>(SCHD)</small>
+                                        <small>(SCHD와 동일한 기초지수 계열)</small>
                                     </td>
                                 </tr>
                                 <tr>
@@ -43,27 +43,28 @@ const Stock = () => {
                                     <td>배당</td>
                                     <td>
                                         KODEX 미국배당커버드콜액티브
-                                        <small>(DIVO/S&P500 + 커버드콜 JEPI와 유사)</small>
+                                        <small>(DIVO와 매우 유사한 구조 + S&P500을 비교지수로 사용)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>
                                         TIGER 미국나스닥100타겟데일리커버드콜
-                                        <small>(Nasdaq100 + 커버드콜 JEPQ와 유사)</small>
+                                        <small>(Nasdaq100 + 커버드콜 / JEPQ와 유사)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>
                                         TIGER 미국나스닥100레버리지(합성)
-                                        <small>(QLD)</small>
+                                        <small>(QLD / Nasdaq100 일일 수익률 2배)</small>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>성장</td>
                                     <td>
                                         RISE 미국AI밸류체인데일리고정커버드콜
+                                        <small>(미국 AI 밸류체인 + 90% 참여 + 데일리 옵션 프리미엄)</small>
                                     </td>
                                 </tr>
                             </tbody>

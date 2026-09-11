@@ -1,5 +1,6 @@
 import { Text } from '@/shared/ui';
 import type { TypographyKey, ColorToken } from '@/shared/ui';
+import styles from './TextSection.module.scss';
 
 // typography.ts에 정의된 프리셋 키 전체 (실제 목록에 맞게 조정해주세요)
 const presets: TypographyKey[] = [
@@ -26,7 +27,7 @@ export const TextSection = () => {
     return (
         <section>
             <h2>Text</h2>
-            <Text preset="b17m" color="success">
+            <Text preset="b17m" color="success" className={styles["test"]}>
                 success
             </Text>
             <h3>Preset</h3>

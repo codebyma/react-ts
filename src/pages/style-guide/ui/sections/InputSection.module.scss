@@ -1,0 +1,16 @@
+@use '@/shared/ui/theme/spacing';
+
+.section {
+    margin-bottom: spacing.get(48);
+}
+
+.row {
+    margin-bottom: spacing.get(24);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.get(12);
+    margin-bottom: spacing.get(24);
+}

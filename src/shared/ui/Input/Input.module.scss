@@ -1,0 +1,81 @@
+@use '../theme/colors';
+@use '../theme/spacing';
+
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    gap: spacing.get(6);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: colors.get('text-primary');
+}
+
+.input {
+    width: 100%;
+    border: 1px solid colors.get('border-default');
+    border-radius: spacing.radius(md);
+    background-color: colors.get('bg-default');
+    color: colors.get('text-primary');
+    transition: border-color 0.15s ease;
+
+    &::placeholder {
+        color: colors.get('text-tertiary');
+    }
+
+    &:focus {
+        outline: none;
+        border-color: colors.get('border-focus');
+    }
+
+    &:disabled {
+        background-color: colors.get('bg-muted');
+        color: colors.get('text-disabled');
+        cursor: not-allowed;
+    }
+}
+
+.input.error {
+    border-color: colors.get('danger');
+
+    &:focus {
+        border-color: colors.get('danger');
+    }
+}
+
+/* ---------- size ---------- */
+.size-sm {
+    height: 32px;
+    padding: 0 spacing.get(12);
+    font-size: 13px;
+}
+
+.size-md {
+    height: 40px;
+    padding: 0 spacing.get(16);
+    font-size: 15px;
+}
+
+.size-lg {
+    height: 48px;
+    padding: 0 spacing.get(16);
+    font-size: 17px;
+}
+
+.helperText {
+    font-size: 13px;
+    color: colors.get('text-secondary');
+    margin: 0;
+}
+
+.errorText {
+    font-size: 13px;
+    color: colors.get('danger');
+    margin: 0;
+}

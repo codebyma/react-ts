@@ -1,0 +1,109 @@
+// ==========================================================================
+// Semantic Colors - 의미론적 색상 토큰
+// ==========================================================================
+//
+// 🎨 이 파일이 하는 일
+// palette.scss의 "원시 색상"(gray 900, blue 500 같은 그냥 색상표)에
+// "text-primary", "brand", "danger" 같은 의미 있는 이름을 붙여주는 역할이에요.
+//
+// 컴포넌트를 만들 때는 항상 이 파일에 정의된 이름만 사용하세요.
+// (예: color: colors.get('text-primary'); ← OK
+//      color: palette.get(palette.$gray, 900); ← 이렇게 직접 쓰면 안 됨)
+//
+// 💡 "의미론적(semantic)"이라는 말의 의미
+// $gray 900번이라는 이름 대신 "text-primary"(기본 텍스트 색)라는
+// "용도"를 이름으로 쓰는 거예요. 이렇게 하면 나중에 다크모드를 만들 때
+// "text-primary가 실제로 어떤 색인지"만 바꾸면 되고,
+// "text-primary를 쓰는 컴포넌트 코드"는 전혀 손댈 필요가 없어요.
+// ==========================================================================
+
+// palette.scss를 가져와서 원시 색상값을 쓸 수 있게 해요.
+@use 'sass:map';
+@use 'palette';
+
+// 실제로 사용할 색상 이름과, 그 이름이 palette의 어떤 색을 가리키는지 정의하는 맵이에요.
+$colors: (
+  // ---- 텍스트에 사용하는 색 ----
+  'text-primary': palette.get(palette.$gray, 900),
+  // 기본 텍스트 (제목, 본문 등 가장 진한 텍스트)
+  'text-secondary': palette.get(palette.$gray, 600),
+  // 보조 설명 텍스트
+  'text-tertiary': palette.get(palette.$gray, 400),
+  // 더 흐린 보조 텍스트 (placeholder 등)
+  'text-disabled': palette.get(palette.$gray, 300),
+  // 비활성화 상태의 텍스트
+  'text-inverse': palette.get(palette.$gray, 0),
+  // 어두운 배경 위에 쓰는 밝은(흰색) 텍스트
+  'text-link': palette.get(palette.$blue, 600),
+  // 링크 텍스트
+
+  // ---- 배경에 사용하는 색 ----
+  'bg-default': palette.get(palette.$gray, 0),
+  // 기본 배경 (거의 흰색)
+  'bg-subtle': palette.get(palette.$gray, 50),
+  // 아주 살짝 톤이 있는 배경
+  'bg-muted': palette.get(palette.$gray, 100),
+  // 카드나 섹션을 구분할 때 쓰는 배경
+  'bg-inverse': palette.get(palette.$gray, 900),
+  // 어두운 배경 (다크 섹션 등)
+
+  // ---- 테두리(border)에 사용하는 색 ----
+  'border-default': palette.get(palette.$gray, 200),
+  // 기본 테두리
+  'border-strong': palette.get(palette.$gray, 300),
+  // 좀 더 진하게 강조할 테두리
+  'border-focus': palette.get(palette.$blue, 500),
+  // 인풋 등이 클릭(포커스)됐을 때 테두리
+
+  // ---- 브랜드(서비스 고유) 색상 ----
+  'brand': palette.get(palette.$blue, 500),
+  // 메인 브랜드 색 (버튼, 강조 요소 등)
+  'brand-hover': palette.get(palette.$blue, 600),
+  // 브랜드색 버튼에 마우스를 올렸을 때
+  'brand-pressed': palette.get(palette.$blue, 700),
+  // 브랜드색 버튼을 누르고 있을 때
+  'brand-subtle': palette.get(palette.$blue, 50),
+  // 브랜드색의 아주 연한 버전 (배경 등에 사용)
+
+  // ---- 상태(성공/경고/위험)를 나타내는 색 ----
+  'success': palette.get(palette.$green, 500),
+  // 성공 상태 (저장 완료 등)
+  'success-subtle': palette.get(palette.$green, 50),
+  // 성공 상태의 연한 배경색
+  'warning': palette.get(palette.$yellow, 500),
+  // 경고 상태
+  'warning-subtle': palette.get(palette.$yellow, 50),
+  'danger': palette.get(palette.$red, 500),
+  // 위험/에러 상태 (삭제, 실패 등)
+  'danger-hover': palette.get(palette.$red, 600),
+  'danger-subtle': palette.get(palette.$red, 50),
+
+  // 모달 등 팝업이 떴을 때, 뒤 배경을 어둡게 덮는 반투명 색
+  'overlay': rgba(17, 24, 39, 0.5),
+);
+
+// $colors map에서 원하는 색을 이름으로 꺼내는 함수예요.
+// 다른 .scss 파일에서 색을 쓸 때는 이 함수를 통해서만 가져다 쓰세요.
+// 사용 예: color: colors.get('text-primary');
+@function get($key) {
+  @if not map.has-key($colors, $key) {
+    @error "Color token `#{$key}` not found.";
+  }
+
+  @return map.get($colors, $key);
+}
+
+// 위에서 정의한 모든 색을, CSS 변수(--color-이름) 형태로도 만들어둬요.
+// 예: --color-text-primary: #111827;
+//
+// 이게 왜 필요하냐면:
+// SCSS 함수(colors.get())는 "CSS가 만들어지는 시점"에 값이 고정돼버려요.
+// 반면 CSS 변수(var(--color-text-primary))는 브라우저가 화면에 그릴 때
+// 실시간으로 값을 읽기 때문에, 나중에 자바스크립트로 테마를 바꾸거나
+// (예: 다크모드 버튼 클릭 시 :root의 변수 값들만 교체)
+// 클래스 하나 없이도 색을 바꿀 수 있게 해주는 유연한 방법이에요.
+:root {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+  }
+}

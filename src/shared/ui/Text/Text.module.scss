@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '../theme/typography';
+@use '../theme/colors';
+
+// 프리셋별 클래스 자동 생성 (.d32b, .h24b, .b17m ...)
+@each $name, $props in typography.$typography {
+  .#{$name} {
+    font-size: map.get($props, font-size);
+    font-weight: map.get($props, font-weight);
+    line-height: map.get($props, line-height);
+    letter-spacing: map.get($props, letter-spacing);
+  }
+}
+
+// 컬러 토큰별 클래스 자동 생성 (.color-text-primary, .color-brand ...)
+@each $name, $value in colors.$colors {
+  .color-#{$name} {
+    color: var(--color-#{$name});
+  }
+}

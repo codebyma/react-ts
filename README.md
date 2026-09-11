@@ -141,6 +141,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
 ### dev 실행
+command prompt에서 아래 실행
 npm run dev
 
 

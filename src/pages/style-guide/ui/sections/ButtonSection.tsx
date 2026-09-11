@@ -6,7 +6,7 @@ const sizes = ['sm', 'md', 'lg'] as const;
 export const ButtonSection = () => {
     return (
         <section>
-            <h2>Button</h2>
+            <h2>Buttons</h2>
 
             <h3>Variant</h3>
             <div style={{ display: 'flex', gap: 12, marginBottom: 24 }}>

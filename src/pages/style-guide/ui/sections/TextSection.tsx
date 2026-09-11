@@ -28,7 +28,7 @@ export const TextSection = () => {
         <section>
             <h2>Text</h2>
             <Text preset="b17m" color="success" className={styles["test"]}>
-                success1
+                success1222
             </Text>
             <h3>Preset</h3>
             {presets.map((preset) => (
